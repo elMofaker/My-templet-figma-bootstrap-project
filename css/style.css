@@ -17,7 +17,8 @@
         display: flex;
         justify-content: space-between;
     }
-    nav img{
+
+    nav img {
         width: 25%;
     }
 }
@@ -29,10 +30,12 @@
         display: flex;
         flex-direction: column;
     }
-    nav img{
+
+    nav img {
         width: 50%;
     }
-    footer{
+
+    footer {
         text-align: center;
     }
 
@@ -46,15 +49,11 @@
 }
 
 
-/* Large */
-@media (min-width: 1200px) {}
-
 /* start main style */
 .main-input {
     border: none;
     box-shadow: 0 0 21px -18px black;
     padding: 15px;
-    /* width: 55%; */
     margin-top: 5px;
     margin-bottom: 5px;
 }
@@ -63,7 +62,7 @@
     background-color: var(--color-green);
     color: var(--color-white);
     border: none;
-    padding: 15px;
+    padding: 19px;
 }
 
 .main_span {
@@ -82,6 +81,10 @@
     position: absolute;
     bottom: 10px;
     left: 126%;
+}
+
+.con-span {
+    overflow: hidden;
 }
 
 /* end main style */
@@ -104,28 +107,41 @@
 }
 
 /* end nav */
-/* start brand */
-.brand .main-brand{
+/* start smail */
+.email form {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     align-items: center;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+    flex-direction: row;
 }
-.brand img{
+
+/* end email */
+/* start brand */
+.brand .main-brand {
+    padding: 20px;
+    display: grid;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.brand img {
+    filter: grayscale(0%);
+    transition: .5s;
+}
+
+.brand img:hover {
     filter: grayscale(100%);
     transition: .5s;
 }
-.brand img:hover{
-    filter: grayscale(0);
-    transition: .5s;
-}
+
 /* end brand */
 /* start expertise */
 .expertise button {
     border: 1px solid black;
     background-color: var(--color-white);
     color: var(--color-ex-blak);
-    font-size: 22px;
 }
 
 /* end expertise */
@@ -134,18 +150,10 @@
     border: 1px solid black;
     background-color: var(--color-white);
     color: var(--color-ex-blak);
-    font-size: 22px;
 }
 
 /* end Service */
 /* start comment */
-.comment h1 {
-    font-size: 48px;
-}
-
-.comment p {
-    font-size: 20px;
-}
 
 .comment .card {
     border: #D5DDDD solid 1px;
@@ -164,24 +172,13 @@
     background: #E8E8E6;
 }
 
-.comment span,
+.comment .main_card span,
 .comment h5 {
     font-size: 24px;
 }
 
 /* end comment */
 /* start team */
-.team h1 {
-    font-size: 40px;
-}
-
-.team h5 {
-    font-size: 22px;
-}
-
-.team p {
-    font-size: 20px;
-}
 
 .team .main_img {
     border-radius: 30%;
@@ -195,10 +192,6 @@
     font-size: 22px;
 }
 
-.team p {
-    padding-right: 50px;
-}
-
 /* end team */
 /* start address */
 .address .container {
@@ -208,10 +201,11 @@
     border-top-left-radius: 4%;
 }
 
-.address .main-btn {
+.address button {
     background-color: #20CFC6;
-    
-    font-size: 20px;
+    color: var(--color-white);
+    border: none;
+    padding: 19px;
 }
 
 .address .main_span {
@@ -221,14 +215,20 @@
 
 .main_span::after {
     background-color: #2CDFD5;
+    padding: 1px;
 }
 
 .address input {
     font-size: 20px;
 }
 
-.address p {
-    font-size: 20px
+.address form {
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 /* end address */
@@ -258,6 +258,3 @@ footer ul li {
 }
 
 /* end footer */
-
-
-
