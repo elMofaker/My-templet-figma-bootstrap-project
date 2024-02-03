@@ -1,3 +1,7 @@
+* {
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
 :root {
     --color-green: #008080;
     --color-blak: #2B2B2B;
@@ -7,10 +11,170 @@
 
 }
 
-* {
+/* start font size */
 
-    font-family: 'IBM Plex Sans', sans-serif;
+/* x lg */
+@media (min-width: 1400px) {
+    .xx-lg-font {
+        font-size: 86px;
+    }
+
+    .x-lg-font {
+        font-size: 48px;
+    }
+
+    .ex-lg-font {
+        font-size: 40px;
+    }
+
+    .lg-font {
+        font-size: 28px;
+    }
+
+    .s-lg-font {
+        font-size: 26px;
+    }
+
+    .ex-md-font {
+        font-size: 24px;
+    }
+
+    .md-font {
+        font-size: 22px;
+    }
+
+    .ex-sm-font {
+        font-size: 20px;
+    }
+
+    .sm-font {
+        font-size: 18px;
+    }
 }
+
+/* lg */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .xx-lg-font {
+        font-size: 65px;
+    }
+
+    .x-lg-font {
+        font-size: 40px;
+    }
+
+    .ex-lg-font {
+        font-size: 40px;
+    }
+
+    .lg-font {
+        font-size: 28px;
+    }
+
+    .s-lg-font {
+        font-size: 26px;
+    }
+
+    .ex-md-font {
+        font-size: 20px;
+    }
+
+    .md-font {
+        font-size: 22px;
+    }
+
+    .ex-sm-font {
+        font-size: 20px;
+    }
+
+    .sm-font {
+        font-size: 18px;
+    }
+}
+
+/* md */
+@media (min-width: 580px) and (max-width: 1199px) {
+    .xx-lg-font {
+        font-size: 47px;
+    }
+
+    .x-lg-font {
+        font-size: 36px;
+    }
+
+    .ex-lg-font {
+        font-size: 40px;
+    }
+
+    .lg-font {
+        font-size: 28px;
+    }
+
+    .s-lg-font {
+        font-size: 21px;
+    }
+
+    .ex-md-font {
+        font-size: 18px;
+    }
+
+    .md-font {
+        font-size: 17px;
+    }
+
+    .ex-sm-font {
+        font-size: 20px;
+    }
+
+    .sm-font {
+        font-size: 18px;
+    }
+
+}
+
+/* sm */
+@media (max-width: 579) {
+    .xx-lg-font {
+        font-size: 35px;
+    }
+
+    .x-lg-font {
+        font-size: 30px;
+    }
+
+    .ex-lg-font {
+        font-size: 40px;
+    }
+
+    .lg-font {
+        font-size: 28px;
+    }
+
+    .s-lg-font {
+        font-size: 26px;
+    }
+
+    .ex-md-font {
+        font-size: 13px;
+    }
+
+    .md-font {
+        font-size: 22px;
+    }
+
+    .ex-sm-font {
+        font-size: 18px;
+    }
+
+    .sm-font {
+        font-size: 18px;
+    }
+}
+
+/* end font size */
+
+/* start w-h size */
+
+/* lg */
 
 @media (min-width: 991px) {
     .container-felx {
@@ -21,6 +185,22 @@
     nav img {
         width: 25%;
     }
+}
+
+/* md */
+@media (min-width: 769px) and (max-width: 991px) {
+    .con-btn {
+        font-size: 22px;
+    }
+
+    .main-size-img {
+        height: 106%;
+    }
+
+    .address con {
+        margin: auto;
+    }
+
 }
 
 @media (max-width: 991px) {
@@ -35,19 +215,25 @@
         width: 50%;
     }
 
+    .address input {
+        text-align: center;
+    }
+
     footer {
         text-align: center;
     }
 
 }
 
-/* Small */
-@media (min-width: 769px) and (max-width: 991px) {
-    .address con {
-        margin: auto
+/* sm */
+
+@media (max-width: 769px) {
+    con-btn {
+        font-size: 19px;
     }
 }
 
+/* end w-h size */
 
 /* start main style */
 .main-input {
@@ -127,12 +313,12 @@
 }
 
 .brand img {
-    filter: grayscale(0%);
+    filter: grayscale(100%);
     transition: .5s;
 }
 
 .brand img:hover {
-    filter: grayscale(100%);
+    filter: grayscale(0%);
     transition: .5s;
 }
 
@@ -161,7 +347,7 @@
 }
 
 .comment .main_card {
-    border: 1px solid var(--color-blak);
+    border: 2px solid #c1c1c1;
     padding: 6%;
     border-top-left-radius: 8%;
     border-bottom-right-radius: 8%;
@@ -172,9 +358,9 @@
     background: #E8E8E6;
 }
 
-.comment .main_card span,
-.comment h5 {
-    font-size: 24px;
+.comment .main_card .container {
+    text-align: start;
+    padding: 0 33px;
 }
 
 /* end comment */
@@ -197,15 +383,18 @@
 .address .container {
     background-color: #008080;
     padding: 50px;
-    border-bottom-right-radius: 4%;
-    border-top-left-radius: 4%;
+    border-bottom-right-radius: 30px;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .address button {
     background-color: #20CFC6;
     color: var(--color-white);
     border: none;
-    padding: 19px;
+    padding: 15px;
+    border-radius: 5px;
 }
 
 .address .main_span {
@@ -220,6 +409,7 @@
 
 .address input {
     font-size: 20px;
+    border-radius: 5px;
 }
 
 .address form {
@@ -243,18 +433,12 @@ footer a {
 
 }
 
-footer .main_span_list {
-    font-size: 23px;
-}
-
 footer ul {
     list-style: none;
 }
 
 footer ul li {
     padding: 10px 16px;
-    font-size: 16px;
-    ;
 }
 
 /* end footer */
