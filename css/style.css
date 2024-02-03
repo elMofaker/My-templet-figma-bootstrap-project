@@ -231,6 +231,9 @@
     con-btn {
         font-size: 19px;
     }
+    .con-ser{
+        text-align: center;
+    }
 }
 
 /* end w-h size */
@@ -248,7 +251,7 @@
     background-color: var(--color-green);
     color: var(--color-white);
     border: none;
-    padding: 19px;
+    padding: 15px;
 }
 
 .main_span {
